@@ -99,6 +99,28 @@ header nav ul li a:hover {
     flex: 1;                  /* text takes remaining space */
 }
 
+.newsletter .container {
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10 px;
+}
+
+.newsletter input [type = "email"] {
+    padding:10px;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+.newsletter .btn {
+    padding: 10px 20px;
+    
+}
+
 body {
     margin: 0;
     font-size: 16px;

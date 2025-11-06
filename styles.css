@@ -81,7 +81,23 @@ header nav ul li a:hover {
     padding: 10px 20px;
 }
 
+.stories article {
+    display: flex;            /* side-by-side layout */
+    align-items: flex-start;  /* top-align image and text */
+    gap: 20px;                /* space between image and text */
+    margin-bottom: 20px;      /* spacing between articles */
+}
 
+.stories article img {
+    width: 200px;             /* fixes huge images */
+    height: auto;             /* maintain aspect ratio */
+    object-fit: cover;        /* optional: crop nicely */
+    border-radius: 8px;       /* optional */
+}
+
+.stories article .article-body {
+    flex: 1;                  /* text takes remaining space */
+}
 
 body {
     margin: 0;

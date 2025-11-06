@@ -1,4 +1,7 @@
-/* Add your CSS to this file */
+header {
+    background-color: white;
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -18,10 +21,15 @@ header nav ul li a {
     text-decoration: none;
     color: #6b7280;
     font-weight: bold;
+    font-size: 18px;
 }
 
 header nav ul li a:hover {
     color: #5A67D8;
+}
+
+.overview-hero {
+    background-color: #E2E8F0;
 }
 
 .overview-hero .container {
@@ -29,6 +37,11 @@ header nav ul li a:hover {
     align-items: center;
     gap: 40px;
     padding : 40px 20px;
+}
+
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
 }
 
 .learn-about .cards{
@@ -43,8 +56,9 @@ header nav ul li a:hover {
 .learn-about .card {
     text-align: center;
     padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     background-color: #fff;
 }
 
@@ -57,12 +71,19 @@ header nav ul li a:hover {
 
 .learn-about .card-body h3 {
     margin-top: 10px;
-    color: #333;
+    color: #48BB78;
+    font-size: 21px;
 }
 
 .learn-about .card-body p {
     color: #555;
     font-size: 14px;
+}
+
+.testing {
+    background-color: #4A5568;
+    color: white;
+    padding: 20px 0;
 }
 
 .testing .container {
@@ -81,23 +102,52 @@ header nav ul li a:hover {
     padding: 10px 20px;
 }
 
+.stories h2{
+    color: #5A67D8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .stories article {
-    display: flex;            /* side-by-side layout */
-    align-items: flex-start;  /* top-align image and text */
-    gap: 20px;                /* space between image and text */
-    margin-bottom: 20px;      /* spacing between articles */
+    display: flex;            
+    align-items: flex-start;  
+    gap: 20px;                
+    margin-bottom: 20px;      
 }
 
 .stories article img {
-    width: 200px;             /* fixes huge images */
-    height: auto;             /* maintain aspect ratio */
-    object-fit: cover;        /* optional: crop nicely */
-    border-radius: 8px;       /* optional */
+    width: 150px;             
+    height: 150px;             
+    object-fit: cover;        
+    border-radius: 50%;
+    flex-shrink: 0;       
 }
 
 .stories article .article-body {
-    flex: 1;                  /* text takes remaining space */
+    flex: 1;                  
 }
+
+.stories article h3 {
+    font-size: 18px;
+}
+
+.stories article a {
+    color: #5A67D8;
+    text-decoration:none;
+}
+
+.stories article a:hover {
+    text-decoration: underline;
+}
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+
+}
+
 
 .newsletter .container {
     text-align: center;
@@ -107,23 +157,51 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 10 px;
+    margin-top: 10px;
 }
 
-.newsletter input [type = "email"] {
+.newsletter input [type="email"] {
     padding:10px;
     width: 250px;
     box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
 }
 
 .newsletter .btn {
     padding: 10px 20px;
-    
+    background-color: #5A67D8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+footer {
+    background-color: #4A5568;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btn {
+  background-color: #48BB78;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #3fa76b;
 }
 
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Open Sans', sans-serif;
 }
 
 .container {

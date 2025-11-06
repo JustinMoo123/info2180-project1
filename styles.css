@@ -65,6 +65,23 @@ header nav ul li a:hover {
     font-size: 14px;
 }
 
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.testing-description {
+    max-width: 70%
+}
+
+.cta .btn {
+    white-space: nowrap;
+    padding: 10px 20px;
+}
+
+
 
 body {
     margin: 0;
